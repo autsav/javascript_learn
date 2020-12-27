@@ -1,0 +1,13 @@
+// Only change code below this line
+function countdown(n){
+  if(n<1){
+    return [];
+  }else{
+const countArray = countdown(n-1);
+countArray.unshift(n);// Add new Item at the begening of the array
+return countArray;
+  } 
+  
+}
+console.log(countdown(5));
+// Only change code above this line
